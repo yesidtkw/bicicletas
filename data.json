@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Bici2",
+        "modelo": "urbana",
+        "precio": 300,
+        "imagen": "imagenes\/bicicleta1",
+        "id": "68057c6853adf"
+    },
+    {
+        "nombre": "Bici TTT",
+        "modelo": "urbana",
+        "precio": 400,
+        "imagen": "imagenes\/bicicleta7",
+        "id": "68057ec1d209c"
+    },
+    {
+        "nombre": "Bici TODO Terreno",
+        "modelo": "urbana",
+        "precio": 300000,
+        "imagen": "imagenes\/bicicleta10.jpg",
+        "id": "6805862e037df"
+    },
+    {
+        "nombre": "Bicicleta VVV",
+        "modelo": "electrica",
+        "precio": 450000,
+        "imagen": "imagenes\/bicicleta11.jpg",
+        "id": "68058aa5e1774"
+    },
+    {
+        "nombre": "Bicicleta YYYYY",
+        "modelo": "paseo",
+        "precio": 320000,
+        "imagen": "imagenes\/bicicleta6.jpg",
+        "id": "68058df36862f"
+    },
+    {
+        "nombre": "Bicicleta UUUU",
+        "modelo": "monta\u00f1a",
+        "precio": 120000,
+        "imagen": "imagenes\/bicicleta3.jpg",
+        "id": "680590e3e33c0"
+    }
+]

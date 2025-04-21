@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alquiler de Bicicletas</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <h1>Alquiler de Bicicletas</h1>
+  <header>
+    <h1>EcoBici</h1>
+    <!-- Nueva barra de navegación -->
+    <!-- Barra de navegación responsive -->
+    <nav id="barra-navegacion">
+      <div class="nav-container">
+        <div class="logo">🚴‍♂️ Bicicletas</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#bicicletas">Bicicletas</a></li>
+
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido a EcoBici</h2>
+    <p>Alquila tu bicicleta fácilmente y recorre la ciudad de manera ecológica y divertida.</p>
+  </section>
+  <!-- Filtros -->
+    <section id="filtros">
+      <h2>Filtrar por modelo</h2>
+      <button onclick="filtrarModelo('todas')">Todas</button>
+      <button onclick="filtrarModelo('montaña')">Montaña</button>
+      <button onclick="filtrarModelo('urbana')">Urbana</button>
+      <button onclick="filtrarModelo('eléctrica')">Eléctrica</button>
+      <button onclick="filtrarModelo('paseo')">Paseo</button>
+
+      <h2>Filtrar por precio</h2>
+      <button onclick="filtrarPrecio('menor')">Menor a $1000</button>
+      <button onclick="filtrarPrecio('mayor')">Mayor a $1000</button>
+      <button onclick="mostrarTodas()">Mostrar todas</button>
+    </section>
+
+    <section id="bicicletas" style="padding-top: 2rem;">
+      <h2>Nuestras Bicicletas</h2>
+      <div class="grid-bicicletas" id="contenedor-bicicletas">
+        <!-- Aquí se generan las bicicletas -->
+      </div>
+    </section>
+
+
+
+
+  <main>
+    <div class="grid-bicicletas" id="lista-bicicletas"></div>
+  </main>
+
+
+
+  <section id="tarifas">
+  <h2>Tarifas de Alquiler</h2>
+  <table>
+    <tr>
+      <th>Tipo</th>
+      <th>1 Hora</th>
+      <th>1 Día</th>
+    </tr>
+    <tr>
+      <td>Montaña</td>
+      <td>$5.00</td>
+      <td>$20.00</td>
+    </tr>
+    <tr>
+      <td>Urbana</td>
+      <td>$4.00</td>
+      <td>$15.00</td>
+    </tr>
+    <tr>
+      <td>Eléctrica</td>
+      <td>$7.00</td>
+      <td>$25.00</td>
+    </tr>
+    <tr>
+      <td>Paseo</td>
+      <td>$3.00</td>
+      <td>$12.00</td>
+    </tr>
+  </table>
+</section>
+
+  <section id="reserva">
+    <h2>Reserva tu Bicicleta</h2>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" placeholder="Tu nombre" required>
+
+      <label>Correo:</label>
+      <input type="email" placeholder="Tu correo" required>
+
+      <label>Tipo de bicicleta:</label>
+      <select required>
+        <option value="">Selecciona una opción</option>
+        <option value="montaña">Montaña</option>
+        <option value="urbana">Urbana</option>
+        <option value="eléctrica">Eléctrica</option>
+        <option value="paseo">Paseo</option>
+      </select>
+
+      <label>Duración (horas):</label>
+      <input type="number" min="1" max="24" required>
+
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Dirección: Calle 123, Ciudad</p>
+    <p>📞 Teléfono: +57 300 123 4567</p>
+    <p>📧 Email: contacto@ecobici.com</p>
+  </section>
+  <section id="contacto" style="padding: 2rem; background-color: #f3f3f3;">
+  <h2>Contacto</h2>
+  <p>¿Tienes preguntas? ¡Contáctanos!</p>
+  <form>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="email">Correo:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 EcoBici. Todos los derechos reservados.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
